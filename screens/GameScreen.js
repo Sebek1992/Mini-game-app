@@ -7,6 +7,7 @@ import NumberContainer from "../componets/game/NumberContainer";
 import PrimaryButton from "../componets/ui/PrimmaryButton";
 import Card from "../componets/ui/Card";
 import InstructionText from "../componets/ui/InstructionText";
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 function generateRandomBetween(min, max, exclude) {
   const rndNum = Math.floor(Math.random() * (max - min)) + min;
@@ -90,6 +91,8 @@ const styles = StyleSheet.create({
   },
   instructionText: {
     marginBottom: 12,
+    fontSize: 23,
+    color: "#ddb52f",
   },
   buttonsContainer: {
     flexDirection: "row",
